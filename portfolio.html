@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michelle Torkwase | Video Editor Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><body class="fade-in">
+
+
+<header>
+  <h1>Michelle Torkwase</h1>
+  <p class="subtitle">Vision in motion. Craft in every cut.</p>
+</header>
+
+<div class="projects">
+  <h2>💼 Explore My Work</h2>
+
+  <div class="project">
+    <span class="category">Weddings</span>
+    <h3>Dream Days Captured</h3>
+    <img src="assets/wedding-thumbnail.jpg" alt="Wedding edit thumbnail">
+    <p>Soft, emotional, love-soaked edits for wedding clients who want more than memories.</p>
+    <p><a href="weddings.html">💍 View Wedding Edits</a></p>
+  </div>
+
+  <div class="project">
+    <span class="category">Music</span>
+    <h3>Beats Meet Cuts</h3>
+    <img src="assets/music-thumbnail.jpg" alt="Music video thumbnail">
+    <p>Fast-paced transitions, rhythm-aligned effects, and bold visuals for artists & labels.</p>
+    <p><a href="music.html">🎶 Watch Music Videos</a></p>
+  </div>
+
+  <div class="project">
+    <span class="category">YouTube Intros</span>
+    <h3>First Impressions Matter</h3>
+    <img src="assets/youtube-thumbnail.jpg" alt="YouTube intro thumbnail">
+    <p>Intros that grab attention within 3 seconds. Slick, fast, and unforgettable.</p>
+    <p><a href="youtube.html">📺 View YouTube Intros</a></p>
+  </div>
+
+  <div class="project">
+    <span class="category">Brand Reels</span>
+    <h3>Sell The Story</h3>
+    <img src="assets/brand-thumbnail.jpg" alt="Brand reel thumbnail">
+    <p>Showcase reels that bring out brand identity — with class, color, and clarity.</p>
+    <p><a href="brand.html">🚀 Watch Brand Reels</a></p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Michelle — VisionCraft Studios
+</footer>
+
+</body>
+</html>
+
+</html>
+<script>
+  document.querySelectorAll('a').forEach(link => {
+    if (link.href && !link.href.includes('#') && !link.href.startsWith('mailto')) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location = link.href;
+        }, 300);
+      });
+    }
+  });
+</script>
